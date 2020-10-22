@@ -1,0 +1,108 @@
+body{
+	
+	margin:0px;
+	min-width:300px;
+}
+*{
+	box-sizing:border-box;
+}
+h1{
+	font-family:"Lucida Sans", "Lucida Sans Regular";
+	text-decoration:underline;
+	color:#339933;
+}
+.the-header{
+	background-color:#FFFFCC;
+	padding:30px 42px;
+	color:red;
+	text-align:center;
+	font-size:x-large;
+	
+}
+.the-header:after{
+	content:"";
+	display:table;
+	clear:both;
+	margin:0px;
+	border:none;
+	border-radius:0px;
+}
+#the-input{
+	width:70%;
+	padding:10px;
+	float:left;
+	font-size:15px;
+	border-radius:5px;
+}
+.create-button{
+font-size:17px;
+	padding:10px;
+	width:30%;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+	transition:0.4s;
+	background-color:#0066FF;
+	color:#00FFFF;
+	border-radius:5px;
+
+}
+.create-button:hover{
+	background-color:#993399;
+	color:#FFFFFF;
+	
+	
+}
+ul{
+	margin:0px;
+	padding:0px;
+}
+ul li{
+	position:relative;
+	background-color:#666666;
+	list-style:none;
+	cursor:pointer;                    /*cursor stylling*/
+	padding:10px 6px 10px 40px;
+	transition:0.3s;/* allows you to change property values smoothly, over a given duration.*/
+		
+}
+ul li:nth-child(odd){
+	background-color:#999999;				/*n-th child.*/
+}
+ul li.checked{
+	background-color:#66FF33;
+	color:white;
+	text-decoration:line-through;
+}
+ul li.checked::before{
+	content:'';
+	position:absolute;
+	border-color:black;
+	border-style:solid;
+	border-width:0px 2px 1px 0px;
+	top:10px;
+	left:15px;
+	transform:rotate(50deg);
+	height:20px;
+	width:10px;
+	color:green;
+}
+ul li:hover{
+background-color:#CCCCCC;
+}
+.close{
+	position:absolute;
+	right:0px;
+	top:0px;
+	padding:5x 15px 10px 15px;
+	margin-right:3px;
+	margin-left:6px;
+}
+.close:hover{
+	background:#CCCCCC;
+}
+span{
+	color:red;
+	font-weight:bolder;
+	font-size:xx-large;
+}
